@@ -1,0 +1,45 @@
+.home {
+  overflow: hidden;
+  .home-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    .description {
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+    }
+    h4 {
+      margin-bottom: 25px;
+    }
+    hr {
+      width: 700px;
+      border: 1px solid #f7f7f7;
+      justify-self: center;
+    }
+  }
+  .home-body {
+    padding: 50px 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 50px;
+  @media (max-width: $width-tablet-ipad) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 50px;
+
+  @media (max-width: $width-tablet-ipad) {
+    grid-template-columns: 1fr;
+  }
+}

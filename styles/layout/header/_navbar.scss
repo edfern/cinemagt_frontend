@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  height: inherit;
+  align-items: center;
+  color: $font-color;
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    li {
+      color: inherit;
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

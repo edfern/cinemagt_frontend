@@ -1,0 +1,33 @@
+.input {
+  padding-bottom: 20px;
+  .text-file {
+    margin: 10px 0px 0px 0px;
+    border-radius: 50px;
+  }
+  .input-label {
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  .input-description {
+    font-size: 0.75rem;
+    display: flex;
+    padding: 5px;
+  }
+
+  .input-readonly input {
+    cursor: not-allowed !important;
+    background-color: #29294d17;
+  }
+
+  input {
+    color: $font-color !important;
+  }
+}
+
+.input.white {
+  input {
+    color: #fff !important;
+  }
+}

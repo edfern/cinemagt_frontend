@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+:root {
+  ---main-color: $primary;
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --success: #{$success};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --light: #{$light};
+  --dark: #{$dark};
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  color: $font-color;
+  font-size: $font-size-body;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Lato', sans-serif;
+}
+
+.banner-demo{
+  position: fixed;
+  min-height: 100px;
+  width: 100%;
+  background-color: #29294d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+}
+
+.banner-demo__container{
+  display: grid;
+}
+
+.banner-demo__container a {
+  font-style: none;
+  color: white;
+}
+

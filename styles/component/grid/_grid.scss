@@ -1,0 +1,25 @@
+.info {
+  img {
+    display: flex;
+    margin: auto;
+  }
+}
+
+.info-container {
+  display: block;
+  width: 100%;
+  @media (max-width:$width-tablet-ipad){
+    text-align: center;
+  }
+}
+
+.grid-container {
+  .grid-header {
+    padding-bottom: 10px;
+    border-bottom: 0.1px $color-border solid;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+    font-size: 1.17rem;
+  }
+}

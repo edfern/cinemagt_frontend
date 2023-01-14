@@ -1,0 +1,23 @@
+.header {
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  min-height: $height-header;
+  height: $height-header;
+  width: 100%;
+  box-shadow: #0000008c 0px 0.063rem 0.3rem 0px;
+  z-index: 10;
+  display: flex;
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  height: inherit;
+  background-image: url('../../../assets/images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@import 'navbar';

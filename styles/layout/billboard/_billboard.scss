@@ -1,0 +1,14 @@
+.movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 0px;
+}
+
+.billboard {
+  padding: 20px 0;
+  h3 {
+    margin-bottom: 20px;
+  }
+}

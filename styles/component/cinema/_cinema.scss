@@ -1,0 +1,99 @@
+.cinema {
+  &__seat {
+    &--selected {
+      fill: #ff3265;
+      stroke: #f77293;
+      color: #f77293;
+    }
+    &--available {
+      fill: white;
+      stroke: #707070;
+    }
+
+    &--purchased {
+      fill: #989898;
+      stroke: #cbcbcb;
+    }
+    &--no-available {
+      cursor: not-allowed;
+    }
+    &:hover {
+      g {
+        fill: #f77293;
+        stroke: #f77293;
+      }
+
+      cursor: pointer;
+    }
+  }
+  &__room {
+    position: relative;
+    width: max-content;
+  }
+}
+
+.function {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  .info-movie,
+  .info-room,
+  .info-function {
+    padding: 10px 0;
+    ul {
+      list-style: none;
+      font-size: medium;
+      li {
+        padding: 1px 0;
+      }
+    }
+    h3 {
+      font-size: large;
+    }
+  }
+  .info-function {
+    margin-bottom: 20px;
+  }
+}
+
+.movie-cover {
+  width: 340px;
+  height: 510px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    opacity: 0.8;
+    scale: 1.03;
+    cursor: pointer;
+  }
+}
+
+.coming-soon {
+  position: relative;
+  &__banner {
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &__info {
+    &--window {
+      background: transparent;
+    }
+    &--info {
+      width: 100%;
+      min-height: 100vh;
+      background-color: white;
+    }
+  }
+}
+
+.item {
+  position: sticky;
+}
